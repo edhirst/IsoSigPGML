@@ -22,7 +22,7 @@ mflds_names = ['S3','S2xS1','RP3','L71','L72','T3','PHS','H_SC']
 
 def importdataSL(mfld_idx):
     isosigs = []
-    with open(f'./Data/Databases/ManifoldData_SL/{mflds_names[mfld_idx]}_23.txt','r') as file:
+    with open(f'../Data/Databases/ManifoldData_SL/{mflds_names[mfld_idx]}_23.txt','r') as file:
         for line in file.readlines():
             isosigs.append(line.strip('\n'))
     return isosigs 

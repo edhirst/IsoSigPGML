@@ -4,7 +4,7 @@ To run, run cell 1, then either cell 2 or 3 to import analysis for snappy cusped
 import numpy as np
 import matplotlib.pyplot as plt
 
-filepath_root = './Data/PGData/'
+filepath_root = '../Data/PGData/'
 snappy = False
 
 #%% #Define snappy filepaths

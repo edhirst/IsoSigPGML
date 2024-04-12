@@ -33,7 +33,7 @@ elif Surgery:
 #%% #Import data
 def importdataSL(mfld_idx):
     isosigs = []
-    with open('./Data/Databases/'+subfolder+f'/{mflds_names[mfld_idx]}_'+moves+'.txt','r') as file:
+    with open('../Data/Databases/'+subfolder+f'/{mflds_names[mfld_idx]}_'+moves+'.txt','r') as file:
         for line in file.readlines():
             isosigs.append(line.strip('\n'))
     return isosigs 

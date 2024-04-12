@@ -18,7 +18,7 @@ moves = '23'
 #%% #Import data
 def importdataSL(mfld_idx):
     isosigs = []
-    with open(f'./Data/Databases/ManifoldData_SL/{mflds_names[mfld_idx]}_'+moves+'.txt','r') as file:
+    with open(f'../Data/Databases/ManifoldData_SL/{mflds_names[mfld_idx]}_'+moves+'.txt','r') as file:
         for line in file.readlines():
             isosigs.append(line.strip('\n'))
     return isosigs 

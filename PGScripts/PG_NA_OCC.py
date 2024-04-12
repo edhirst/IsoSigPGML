@@ -25,7 +25,7 @@ print(list(map(len,cuspisosigs)))
 CuspedCensusL8 = cuspisosigs[:8]
 print(len(CuspedCensusL8[-1]),snappy.Triangulation(CuspedCensusL8[-1][-1]).num_tetrahedra())
 
-with open('./Data/Databases/CuspedCensusL8.txt','w') as file:
+with open('../Data/Databases/CuspedCensusL8.txt','w') as file:
     for nt in CuspedCensusL8:
         for sig in nt:
             file.write(sig+'\n')
@@ -143,20 +143,20 @@ if __name__ == '__main__':
        
     CCL8_isosigs = []
     #Import isosig data
-    with open('./Data/Databases/CuspedCensusL8.txt','r') as file:
+    with open('../Data/Databases/CuspedCensusL8.txt','r') as file:
         for line in file.readlines():
             CCL8_isosigs.append(line.strip('\n'))
 
     #Initialise output file:
     if start == 0:
-        with open(f'./Data/PGData/snappycusp/CuspedCensusL8_NA_{depth}_{move_str}.txt','w') as file:
+        with open(f'../Data/PGData/snappycusp/CuspedCensusL8_NA_{depth}_{move_str}.txt','w') as file:
             file.write('Snappy OrientedCuspedCensus (with number tetrahedra < 8) Network Analysis ((initial # tetrahedra, isosig), (#triangulations, density), degree distribution, clustering (tri,squ), min cycle basis info, wiener index, EV centrality (max,range)), NumTetrahedra (index of min, min, unique distribution)\n')
 
     #Loop over the census (of 4815) computing NA properties
     with Pool(12) as p:
         for output in p.imap(networkanalysis,CCL8_isosigs[start:]):
             #Save data to file
-            with open(f'./Data/PGData/snappycusp/CuspedCensusL8_NA_{depth}_{move_str}.txt','a') as file:
+            with open(f'../Data/PGData/snappycusp/CuspedCensusL8_NA_{depth}_{move_str}.txt','a') as file:
                 file.write(f'{output[12]}, {output[0]}\n')
                 file.write(f'({output[1]}, {output[2]})\n')
                 file.write(f'{output[3]}\n')
