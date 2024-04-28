@@ -17,6 +17,7 @@ alphabet = list(string.ascii_lowercase) + list(string.ascii_uppercase) + [str(i)
 moves = '23'
 Knot = False
 Surgery = False
+Surgery_number = 0 #..choose between 0 or 1
 #Same length isosigs
 if not Knot and not Surgery:
     mflds_names = ['S3','S2xS1','RP3','L71','L72','T3','PHS','H_SC']
@@ -25,10 +26,14 @@ if not Knot and not Surgery:
 elif Knot:
     mflds_names = ['Unknot_c','Trefoil_c','FigureEight_c','5_1_c','5_2_c','DT6a_3_c','DT8n_1_c']
     subfolder = 'KnotData'
-#Surgery isosigs (Trefoil)
+#Surgery isosigs
 elif Surgery:
-    mflds_names = ['Trefoil_c','Trefoil_0','Trefoil_1']
     subfolder = 'SurgeryData'
+    if Surgery_number == 0:
+        mflds_names = ['Unknot_0','Trefoil_0']
+
+    elif Surgery_number == 1:
+        mflds_names = ['Unknot_1','Trefoil_1']
 
 #%% #Import data
 def importdataSL(mfld_idx):
