@@ -16,4 +16,6 @@ An introductory notebook, aptly named `IntroductoryNotebook.ipynb`, demonstrates
 raise NotImplementedError
 
 ------------------------------------------------------------------------
-This repository also contains some further scripts for preliminary work performing a word2vec analysis of the IsoSig representation. The file `PG_MinimisingPaths.ipynb` contains code to generate minimising paths (a sequence of moves which reduces the number of tetrahedra in the triangulation as quickly as possible), which are used to train a word2vec embedding. The file `word2vec.py` then performs the embedding training and a variety of analyses on it, no obvious clustering was observed, however some interesting correlations were visible between the path length and embedding similarity.   
+This repository also contains some further scripts for preliminary work performing a word2vec analysis of the IsoSig representation...    
+~ The file `PG_MinimisingPaths.ipynb` contains code to generate minimising paths (a sequence of moves which reduces the number of tetrahedra in the triangulation as quickly as possible), which are used to train a word2vec embedding.     
+~ The file `word2vec.py` then performs the embedding training and a variety of analyses on it, no obvious clustering was observed, however some interesting correlations were visible between the path length and embedding similarity.   
