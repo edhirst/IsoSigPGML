@@ -13,7 +13,16 @@ An introductory notebook, aptly named `IntroductoryNotebook.ipynb`, demonstrates
 
 ------------------------------------------------------------------------
 # BibTeX Citation
-raise NotImplementedError
+@article{Costantino:2024joa,
+    author = "Costantino, Francesco and He, Yang-Hui and Heyes, Elli and Hirst, Edward",
+    title = "{Learning 3-Manifold Triangulations}",
+    eprint = "2405.09610",
+    archivePrefix = "arXiv",
+    primaryClass = "math.GT",
+    reportNumber = "QMUL-PH-23-16",
+    month = "5",
+    year = "2024"
+}
 
 ------------------------------------------------------------------------
 This repository also contains some further scripts for preliminary work performing a word2vec analysis of the IsoSig representation...    
