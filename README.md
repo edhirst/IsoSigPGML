@@ -13,6 +13,7 @@ An introductory notebook, aptly named `IntroductoryNotebook.ipynb`, demonstrates
 
 ------------------------------------------------------------------------
 # BibTeX Citation
+```
 @article{Costantino:2024joa,
     author = "Costantino, Francesco and He, Yang-Hui and Heyes, Elli and Hirst, Edward",
     title = "{Learning 3-Manifold Triangulations}",
@@ -23,7 +24,7 @@ An introductory notebook, aptly named `IntroductoryNotebook.ipynb`, demonstrates
     month = "5",
     year = "2024"
 }
-
+```
 ------------------------------------------------------------------------
 This repository also contains some further scripts for preliminary work performing a word2vec analysis of the IsoSig representation...    
 ~ The file `PG_MinimisingPaths.ipynb` contains code to generate minimising paths (a sequence of moves which reduces the number of tetrahedra in the triangulation as quickly as possible), which are used to train a word2vec embedding.     
