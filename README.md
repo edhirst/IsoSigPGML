@@ -16,13 +16,17 @@ An introductory notebook, aptly named `IntroductoryNotebook.ipynb`, demonstrates
 ```
 @article{Costantino:2024joa,
     author = "Costantino, Francesco and He, Yang-Hui and Heyes, Elli and Hirst, Edward",
-    title = "{Learning 3-Manifold Triangulations}",
+    title = "{Learning 3-manifold triangulations}",
     eprint = "2405.09610",
     archivePrefix = "arXiv",
     primaryClass = "math.GT",
     reportNumber = "QMUL-PH-23-16",
-    month = "5",
-    year = "2024"
+    doi = "10.1088/1751-8121/adb5de",
+    journal = "J. Phys. A",
+    volume = "58",
+    number = "9",
+    pages = "095201",
+    year = "2025"
 }
 ```
 ------------------------------------------------------------------------
